@@ -1,0 +1,379 @@
+﻿Usecase,Blueprint,Component
+Automated Content Creation,RAG,Retrieval
+Automated Content Creation,RAG,LLM Inference
+Automated Content Creation,RAG,Guardrails
+Automated Content Creation,Embedding Service,Tokenizer
+Automated Content Creation,Embedding Service,Embedding Model
+Automated Content Creation,Embedding Service,Vector Store
+Automated Content Creation,Evaluation Suite,Test Harness
+Automated Content Creation,Evaluation Suite,Metric Calculator
+Automated Content Creation,Guardrails,Policy Engine
+Automated Content Creation,Guardrails,Filter Engine
+Automated Content Creation,Ingest/Data Prep,ETL Pipeline
+Automated Content Creation,Ingest/Data Prep,Preprocessor
+Automated Content Creation,LLM Inference,Model Loader
+Automated Content Creation,LLM Inference,Inference Engine
+Automated Content Creation,Memory System,Session Cache
+Automated Content Creation,Memory System,State Tracker
+Automated Content Creation,Monitoring/Observ.,Telemetry Collector
+Automated Content Creation,Monitoring/Observ.,Alert Engine
+Automated Content Creation,Orchestration,Workflow Engine
+Automated Content Creation,Orchestration,Scheduler
+Automated Content Creation,Prompt Engine,Prompt Builder
+Automated Content Creation,Prompt Engine,Template Store
+Automated Content Creation,Retrieval/Ranking,Retriever
+Automated Content Creation,Retrieval/Ranking,Ranker
+Automated Content Creation,Vector Store,Vector Index
+Automated Content Creation,Vector Store,ANN Search
+Automated Content Creation,Summarization,LLM Inference
+Automated Content Creation,Summarization,Summarizer
+Chatbots & Virtual Assistants,Agent-Based Chat,Agent Core
+Chatbots & Virtual Assistants,Agent-Based Chat,Dialogue Manager
+Chatbots & Virtual Assistants,Guardrails,Policy Engine
+Chatbots & Virtual Assistants,Guardrails,Filter Engine
+Chatbots & Virtual Assistants,LLM Inference,Model Loader
+Chatbots & Virtual Assistants,LLM Inference,Inference Engine
+Chatbots & Virtual Assistants,Memory System,Session Cache
+Chatbots & Virtual Assistants,Memory System,State Tracker
+Chatbots & Virtual Assistants,Orchestration,Workflow Engine
+Chatbots & Virtual Assistants,Orchestration,Scheduler
+Chatbots & Virtual Assistants,Prompt Engine,Prompt Builder
+Chatbots & Virtual Assistants,Prompt Engine,Template Store
+Chatbots & Virtual Assistants,Retrieval/Ranking,Retriever
+Chatbots & Virtual Assistants,Retrieval/Ranking,Ranker
+Chatbots & Virtual Assistants,RAG,Retrieval
+Chatbots & Virtual Assistants,RAG,LLM Inference
+Chatbots & Virtual Assistants,RAG,Guardrails
+Chatbots & Virtual Assistants,Embedding Service,Tokenizer
+Chatbots & Virtual Assistants,Embedding Service,Embedding Model
+Chatbots & Virtual Assistants,Embedding Service,Vector Store
+Chatbots & Virtual Assistants,Evaluation Suite,Test Harness
+Chatbots & Virtual Assistants,Evaluation Suite,Metric Calculator
+Chatbots & Virtual Assistants,Monitoring/Observ.,Telemetry Collector
+Chatbots & Virtual Assistants,Monitoring/Observ.,Alert Engine
+Chatbots & Virtual Assistants,Vector Store,Vector Index
+Chatbots & Virtual Assistants,Vector Store,ANN Search
+Code Generation & Debugging,Copilot/CodeGen,Code Generator
+Code Generation & Debugging,Copilot/CodeGen,Syntax Validator
+Code Generation & Debugging,Guardrails,Policy Engine
+Code Generation & Debugging,Guardrails,Filter Engine
+Code Generation & Debugging,LLM Inference,Model Loader
+Code Generation & Debugging,LLM Inference,Inference Engine
+Code Generation & Debugging,Prompt Engine,Prompt Builder
+Code Generation & Debugging,Prompt Engine,Template Store
+Code Generation & Debugging,Retrieval/Ranking,Retriever
+Code Generation & Debugging,Retrieval/Ranking,Ranker
+Data Summarization & Reporting,RAG,Retrieval
+Data Summarization & Reporting,RAG,LLM Inference
+Data Summarization & Reporting,RAG,Guardrails
+Data Summarization & Reporting,Embedding Service,Tokenizer
+Data Summarization & Reporting,Embedding Service,Embedding Model
+Data Summarization & Reporting,Embedding Service,Vector Store
+Data Summarization & Reporting,Evaluation Suite,Test Harness
+Data Summarization & Reporting,Evaluation Suite,Metric Calculator
+Data Summarization & Reporting,Guardrails,Policy Engine
+Data Summarization & Reporting,Guardrails,Filter Engine
+Data Summarization & Reporting,Ingest/Data Prep,ETL Pipeline
+Data Summarization & Reporting,Ingest/Data Prep,Preprocessor
+Data Summarization & Reporting,LLM Inference,Model Loader
+Data Summarization & Reporting,LLM Inference,Inference Engine
+Data Summarization & Reporting,Memory System,Session Cache
+Data Summarization & Reporting,Memory System,State Tracker
+Data Summarization & Reporting,Monitoring/Observ.,Telemetry Collector
+Data Summarization & Reporting,Monitoring/Observ.,Alert Engine
+Data Summarization & Reporting,Orchestration,Workflow Engine
+Data Summarization & Reporting,Orchestration,Scheduler
+Data Summarization & Reporting,Prompt Engine,Prompt Builder
+Data Summarization & Reporting,Prompt Engine,Template Store
+Data Summarization & Reporting,Retrieval/Ranking,Retriever
+Data Summarization & Reporting,Retrieval/Ranking,Ranker
+Data Summarization & Reporting,Vector Store,Vector Index
+Data Summarization & Reporting,Vector Store,ANN Search
+Data Summarization & Reporting,Summarization,LLM Inference
+Data Summarization & Reporting,Summarization,Summarizer
+Automated Documentation,RAG,Retrieval
+Automated Documentation,RAG,LLM Inference
+Automated Documentation,RAG,Guardrails
+Automated Documentation,Embedding Service,Tokenizer
+Automated Documentation,Embedding Service,Embedding Model
+Automated Documentation,Embedding Service,Vector Store
+Automated Documentation,Evaluation Suite,Test Harness
+Automated Documentation,Evaluation Suite,Metric Calculator
+Automated Documentation,Guardrails,Policy Engine
+Automated Documentation,Guardrails,Filter Engine
+Automated Documentation,Ingest/Data Prep,ETL Pipeline
+Automated Documentation,Ingest/Data Prep,Preprocessor
+Automated Documentation,LLM Inference,Model Loader
+Automated Documentation,LLM Inference,Inference Engine
+Automated Documentation,Memory System,Session Cache
+Automated Documentation,Memory System,State Tracker
+Automated Documentation,Monitoring/Observ.,Telemetry Collector
+Automated Documentation,Monitoring/Observ.,Alert Engine
+Automated Documentation,Orchestration,Workflow Engine
+Automated Documentation,Orchestration,Scheduler
+Automated Documentation,Prompt Engine,Prompt Builder
+Automated Documentation,Prompt Engine,Template Store
+Automated Documentation,Retrieval/Ranking,Retriever
+Automated Documentation,Retrieval/Ranking,Ranker
+Automated Documentation,Vector Store,Vector Index
+Automated Documentation,Vector Store,ANN Search
+Automated Documentation,Summarization,LLM Inference
+Automated Documentation,Summarization,Summarizer
+Contract Analysis & Review,RAG,Retrieval
+Contract Analysis & Review,RAG,LLM Inference
+Contract Analysis & Review,RAG,Guardrails
+Contract Analysis & Review,Embedding Service,Tokenizer
+Contract Analysis & Review,Embedding Service,Embedding Model
+Contract Analysis & Review,Embedding Service,Vector Store
+Contract Analysis & Review,Evaluation Suite,Test Harness
+Contract Analysis & Review,Evaluation Suite,Metric Calculator
+Contract Analysis & Review,Guardrails,Policy Engine
+Contract Analysis & Review,Guardrails,Filter Engine
+Contract Analysis & Review,Ingest/Data Prep,ETL Pipeline
+Contract Analysis & Review,Ingest/Data Prep,Preprocessor
+Contract Analysis & Review,LLM Inference,Model Loader
+Contract Analysis & Review,LLM Inference,Inference Engine
+Contract Analysis & Review,Memory System,Session Cache
+Contract Analysis & Review,Memory System,State Tracker
+Contract Analysis & Review,Monitoring/Observ.,Telemetry Collector
+Contract Analysis & Review,Monitoring/Observ.,Alert Engine
+Contract Analysis & Review,Orchestration,Workflow Engine
+Contract Analysis & Review,Orchestration,Scheduler
+Contract Analysis & Review,Prompt Engine,Prompt Builder
+Contract Analysis & Review,Prompt Engine,Template Store
+Contract Analysis & Review,Retrieval/Ranking,Retriever
+Contract Analysis & Review,Retrieval/Ranking,Ranker
+Contract Analysis & Review,Vector Store,Vector Index
+Contract Analysis & Review,Vector Store,ANN Search
+Contract Analysis & Review,Summarization,LLM Inference
+Contract Analysis & Review,Summarization,Summarizer
+Medical Imaging Analysis,Multimodal Q&A,Vision Model
+Medical Imaging Analysis,Multimodal Q&A,Text Model
+Medical Imaging Analysis,Guardrails,Policy Engine
+Medical Imaging Analysis,Guardrails,Filter Engine
+Medical Imaging Analysis,Ingest/Data Prep,ETL Pipeline
+Medical Imaging Analysis,Ingest/Data Prep,Preprocessor
+Medical Imaging Analysis,Multimodal Model,Image Encoder
+Medical Imaging Analysis,Multimodal Model,Fusion Engine
+Medical Imaging Analysis,Prompt Engine,Prompt Builder
+Medical Imaging Analysis,Prompt Engine,Template Store
+Medical Imaging Analysis,Retrieval/Ranking,Retriever
+Medical Imaging Analysis,Retrieval/Ranking,Ranker
+Resume Screening & Matching,Q&A,Question Parser
+Resume Screening & Matching,Q&A,Answer Synthesizer
+Resume Screening & Matching,Embedding Service,Tokenizer
+Resume Screening & Matching,Embedding Service,Embedding Model
+Resume Screening & Matching,Embedding Service,Vector Store
+Resume Screening & Matching,Guardrails,Policy Engine
+Resume Screening & Matching,Guardrails,Filter Engine
+Resume Screening & Matching,Ingest/Data Prep,ETL Pipeline
+Resume Screening & Matching,Ingest/Data Prep,Preprocessor
+Resume Screening & Matching,LLM Inference,Model Loader
+Resume Screening & Matching,LLM Inference,Inference Engine
+Resume Screening & Matching,Prompt Engine,Prompt Builder
+Resume Screening & Matching,Prompt Engine,Template Store
+Resume Screening & Matching,Retrieval/Ranking,Retriever
+Resume Screening & Matching,Retrieval/Ranking,Ranker
+Resume Screening & Matching,RAG,Retrieval
+Resume Screening & Matching,RAG,LLM Inference
+Resume Screening & Matching,RAG,Guardrails
+Resume Screening & Matching,Evaluation Suite,Test Harness
+Resume Screening & Matching,Evaluation Suite,Metric Calculator
+Resume Screening & Matching,Memory System,Session Cache
+Resume Screening & Matching,Memory System,State Tracker
+Resume Screening & Matching,Monitoring/Observ.,Telemetry Collector
+Resume Screening & Matching,Monitoring/Observ.,Alert Engine
+Resume Screening & Matching,Orchestration,Workflow Engine
+Resume Screening & Matching,Orchestration,Scheduler
+Resume Screening & Matching,Vector Store,Vector Index
+Resume Screening & Matching,Vector Store,ANN Search
+Compliance Monitoring,Evaluation,Performance Analyzer
+Compliance Monitoring,Embedding Service,Tokenizer
+Compliance Monitoring,Embedding Service,Embedding Model
+Compliance Monitoring,Embedding Service,Vector Store
+Compliance Monitoring,Evaluation Suite,Test Harness
+Compliance Monitoring,Evaluation Suite,Metric Calculator
+Compliance Monitoring,Guardrails,Policy Engine
+Compliance Monitoring,Guardrails,Filter Engine
+Compliance Monitoring,Ingest/Data Prep,ETL Pipeline
+Compliance Monitoring,Ingest/Data Prep,Preprocessor
+Compliance Monitoring,LLM Inference,Model Loader
+Compliance Monitoring,LLM Inference,Inference Engine
+Compliance Monitoring,Prompt Engine,Prompt Builder
+Compliance Monitoring,Prompt Engine,Template Store
+Compliance Monitoring,Retrieval/Ranking,Retriever
+Compliance Monitoring,Retrieval/Ranking,Ranker
+Compliance Monitoring,RAG,Retrieval
+Compliance Monitoring,RAG,LLM Inference
+Compliance Monitoring,RAG,Guardrails
+Compliance Monitoring,Memory System,Session Cache
+Compliance Monitoring,Memory System,State Tracker
+Compliance Monitoring,Monitoring/Observ.,Telemetry Collector
+Compliance Monitoring,Monitoring/Observ.,Alert Engine
+Compliance Monitoring,Orchestration,Workflow Engine
+Compliance Monitoring,Orchestration,Scheduler
+Compliance Monitoring,Vector Store,Vector Index
+Compliance Monitoring,Vector Store,ANN Search
+Fraud Detection,Predictive Modeling,Model Trainer
+Fraud Detection,Predictive Modeling,Forecaster
+Fraud Detection,Embedding Service,Tokenizer
+Fraud Detection,Embedding Service,Embedding Model
+Fraud Detection,Embedding Service,Vector Store
+Fraud Detection,Guardrails,Policy Engine
+Fraud Detection,Guardrails,Filter Engine
+Fraud Detection,Ingest/Data Prep,ETL Pipeline
+Fraud Detection,Ingest/Data Prep,Preprocessor
+Fraud Detection,LLM Inference,Model Loader
+Fraud Detection,LLM Inference,Inference Engine
+Fraud Detection,Monitoring/Observ.,Telemetry Collector
+Fraud Detection,Monitoring/Observ.,Alert Engine
+Fraud Detection,Retrieval/Ranking,Retriever
+Fraud Detection,Retrieval/Ranking,Ranker
+Fraud Detection,RAG,Retrieval
+Fraud Detection,RAG,LLM Inference
+Fraud Detection,RAG,Guardrails
+Fraud Detection,Evaluation Suite,Test Harness
+Fraud Detection,Evaluation Suite,Metric Calculator
+Fraud Detection,Memory System,Session Cache
+Fraud Detection,Memory System,State Tracker
+Fraud Detection,Orchestration,Workflow Engine
+Fraud Detection,Orchestration,Scheduler
+Fraud Detection,Prompt Engine,Prompt Builder
+Fraud Detection,Prompt Engine,Template Store
+Fraud Detection,Vector Store,Vector Index
+Fraud Detection,Vector Store,ANN Search
+Demand Forecasting,Predictive Modeling,Model Trainer
+Demand Forecasting,Predictive Modeling,Forecaster
+Demand Forecasting,Embedding Service,Tokenizer
+Demand Forecasting,Embedding Service,Embedding Model
+Demand Forecasting,Embedding Service,Vector Store
+Demand Forecasting,Guardrails,Policy Engine
+Demand Forecasting,Guardrails,Filter Engine
+Demand Forecasting,Ingest/Data Prep,ETL Pipeline
+Demand Forecasting,Ingest/Data Prep,Preprocessor
+Demand Forecasting,LLM Inference,Model Loader
+Demand Forecasting,LLM Inference,Inference Engine
+Demand Forecasting,Monitoring/Observ.,Telemetry Collector
+Demand Forecasting,Monitoring/Observ.,Alert Engine
+Demand Forecasting,Retrieval/Ranking,Retriever
+Demand Forecasting,Retrieval/Ranking,Ranker
+Personalized Learning Content,RAG,Retrieval
+Personalized Learning Content,RAG,LLM Inference
+Personalized Learning Content,RAG,Guardrails
+Personalized Learning Content,Embedding Service,Tokenizer
+Personalized Learning Content,Embedding Service,Embedding Model
+Personalized Learning Content,Embedding Service,Vector Store
+Personalized Learning Content,Evaluation Suite,Test Harness
+Personalized Learning Content,Evaluation Suite,Metric Calculator
+Personalized Learning Content,Guardrails,Policy Engine
+Personalized Learning Content,Guardrails,Filter Engine
+Personalized Learning Content,Ingest/Data Prep,ETL Pipeline
+Personalized Learning Content,Ingest/Data Prep,Preprocessor
+Personalized Learning Content,LLM Inference,Model Loader
+Personalized Learning Content,LLM Inference,Inference Engine
+Personalized Learning Content,Memory System,Session Cache
+Personalized Learning Content,Memory System,State Tracker
+Personalized Learning Content,Monitoring/Observ.,Telemetry Collector
+Personalized Learning Content,Monitoring/Observ.,Alert Engine
+Personalized Learning Content,Orchestration,Workflow Engine
+Personalized Learning Content,Orchestration,Scheduler
+Personalized Learning Content,Prompt Engine,Prompt Builder
+Personalized Learning Content,Prompt Engine,Template Store
+Personalized Learning Content,Retrieval/Ranking,Retriever
+Personalized Learning Content,Retrieval/Ranking,Ranker
+Personalized Learning Content,Vector Store,Vector Index
+Personalized Learning Content,Vector Store,ANN Search
+Personalized Learning Content,Summarization,LLM Inference
+Personalized Learning Content,Summarization,Summarizer
+Data Augmentation (Synthetic),Data Augmentation,Data Generator
+Data Augmentation (Synthetic),Data Augmentation,Transformer
+Data Augmentation (Synthetic),Embedding Service,Tokenizer
+Data Augmentation (Synthetic),Embedding Service,Embedding Model
+Data Augmentation (Synthetic),Embedding Service,Vector Store
+Data Augmentation (Synthetic),Guardrails,Policy Engine
+Data Augmentation (Synthetic),Guardrails,Filter Engine
+Data Augmentation (Synthetic),Ingest/Data Prep,ETL Pipeline
+Data Augmentation (Synthetic),Ingest/Data Prep,Preprocessor
+Data Augmentation (Synthetic),LLM Training/Fine-tune,Trainer
+Data Augmentation (Synthetic),LLM Training/Fine-tune,Data Loader
+Data Augmentation (Synthetic),Retrieval/Ranking,Retriever
+Data Augmentation (Synthetic),Retrieval/Ranking,Ranker
+Data Augmentation (Synthetic),GAN/VAE,Generator
+Data Augmentation (Synthetic),GAN/VAE,Discriminator
+Multimodal Q&A,Multimodal Q&A,Vision Model
+Multimodal Q&A,Multimodal Q&A,Text Model
+Multimodal Q&A,Guardrails,Policy Engine
+Multimodal Q&A,Guardrails,Filter Engine
+Multimodal Q&A,Ingest/Data Prep,ETL Pipeline
+Multimodal Q&A,Ingest/Data Prep,Preprocessor
+Multimodal Q&A,Multimodal Model,Image Encoder
+Multimodal Q&A,Multimodal Model,Fusion Engine
+Multimodal Q&A,Prompt Engine,Prompt Builder
+Multimodal Q&A,Prompt Engine,Template Store
+Multimodal Q&A,Retrieval/Ranking,Retriever
+Multimodal Q&A,Retrieval/Ranking,Ranker
+Agent-Based Workflow Automation,Agent-Based Chat,Agent Core
+Agent-Based Workflow Automation,Agent-Based Chat,Dialogue Manager
+Agent-Based Workflow Automation,Guardrails,Policy Engine
+Agent-Based Workflow Automation,Guardrails,Filter Engine
+Agent-Based Workflow Automation,LLM Inference,Model Loader
+Agent-Based Workflow Automation,LLM Inference,Inference Engine
+Agent-Based Workflow Automation,Memory System,Session Cache
+Agent-Based Workflow Automation,Memory System,State Tracker
+Agent-Based Workflow Automation,Orchestration,Workflow Engine
+Agent-Based Workflow Automation,Orchestration,Scheduler
+Agent-Based Workflow Automation,Prompt Engine,Prompt Builder
+Agent-Based Workflow Automation,Prompt Engine,Template Store
+Agent-Based Workflow Automation,Retrieval/Ranking,Retriever
+Agent-Based Workflow Automation,Retrieval/Ranking,Ranker
+Evaluation & Assessment,Evaluation & Assessment,Grader
+Evaluation & Assessment,Evaluation & Assessment,Rubric Engine
+Evaluation & Assessment,Evaluation Suite,Test Harness
+Evaluation & Assessment,Evaluation Suite,Metric Calculator
+Evaluation & Assessment,Guardrails,Policy Engine
+Evaluation & Assessment,Guardrails,Filter Engine
+Evaluation & Assessment,LLM Inference,Model Loader
+Evaluation & Assessment,LLM Inference,Inference Engine
+Evaluation & Assessment,Monitoring/Observ.,Telemetry Collector
+Evaluation & Assessment,Monitoring/Observ.,Alert Engine
+Data Visualization,Data Analytics,Chart Renderer
+Data Visualization,Data Analytics,Query Engine
+Data Visualization,Embedding Service,Tokenizer
+Data Visualization,Embedding Service,Embedding Model
+Data Visualization,Embedding Service,Vector Store
+Data Visualization,Ingest/Data Prep,ETL Pipeline
+Data Visualization,Ingest/Data Prep,Preprocessor
+Data Visualization,LLM Inference,Model Loader
+Data Visualization,LLM Inference,Inference Engine
+Data Visualization,Prompt Engine,Prompt Builder
+Data Visualization,Prompt Engine,Template Store
+Data Visualization,Retrieval/Ranking,Retriever
+Data Visualization,Retrieval/Ranking,Ranker
+Data Visualization,RAG,Retrieval
+Data Visualization,RAG,LLM Inference
+Data Visualization,RAG,Guardrails
+Data Visualization,Evaluation Suite,Test Harness
+Data Visualization,Evaluation Suite,Metric Calculator
+Data Visualization,Memory System,Session Cache
+Data Visualization,Memory System,State Tracker
+Data Visualization,Monitoring/Observ.,Telemetry Collector
+Data Visualization,Monitoring/Observ.,Alert Engine
+Data Visualization,Orchestration,Workflow Engine
+Data Visualization,Orchestration,Scheduler
+Data Visualization,Vector Store,Vector Index
+Data Visualization,Vector Store,ANN Search
+Predictive Modeling,Predictive Modeling,Model Trainer
+Predictive Modeling,Predictive Modeling,Forecaster
+Predictive Modeling,Embedding Service,Tokenizer
+Predictive Modeling,Embedding Service,Embedding Model
+Predictive Modeling,Embedding Service,Vector Store
+Predictive Modeling,Guardrails,Policy Engine
+Predictive Modeling,Guardrails,Filter Engine
+Predictive Modeling,Ingest/Data Prep,ETL Pipeline
+Predictive Modeling,Ingest/Data Prep,Preprocessor
+Predictive Modeling,LLM Inference,Model Loader
+Predictive Modeling,LLM Inference,Inference Engine
+Predictive Modeling,Monitoring/Observ.,Telemetry Collector
+Predictive Modeling,Monitoring/Observ.,Alert Engine
+Predictive Modeling,Retrieval/Ranking,Retriever
+Predictive Modeling,Retrieval/Ranking,Ranker

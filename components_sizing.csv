@@ -1,0 +1,4 @@
+Component,Workload Type,Metric,Normal CPU (vCPUs),Memory (GB),Gaudi CPU (192-core Gaudi GNR),Gaudi CPU (128-core Gaudi EMR),GPU (A100),GPU (H100),TPU (Estimate),Scaling Formula,Minimum Scaling Slab
+LLM Inference,Token Based,Tokens/sec,8,32,100,80,1.0,0.5,0.5,ceil((Concurrency * Tokens/sec per user) / Unit Capacity),1 GPU or 4 CPU cores per unit
+Prompt Engine,Token Based,Tokens/sec,4,16,50,40,0.5,0.25,0.25,ceil((Concurrency * Tokens/sec per user) / Unit Capacity),1 GPU or 4 CPU cores per unit
+Vector Store,Non Token Based,Vector Queries/sec,2,8,1000,800,0.0,0.0,0.0,ceil(Expected QPS / Unit Capacity),1 CPU

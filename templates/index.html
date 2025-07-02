@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> GenAI Hardware Sizer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { padding: 20px; }
+        .card { margin-bottom: 20px; }
+        .slider-value { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mb-4"> GenAI Hardware Sizer</h2>
+
+        <form action="/result" method="POST">
+            <div class="card">
+                <div class="card-header fw-bold">Workload & Use Case Definition</div>
+                <div class="card-body">
+                    <label>GenAI Use Case(s)</label>
+                    <select class="form-control" name="usecase" multiple size="5" required>
+                        {% for uc in usecases %}
+                            <option value="{{ uc }}">{{ uc }}</option>
+                        {% endfor %}
+                    </select>
+                    <small><b>Why:</b> Determines foundational components and blueprints.<br>
+                    <b>How it affects sizing:</b> Different use cases activate different components.</small>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header fw-bold">LLM Parameters</div>
+                <div class="card-body">
+                    <label for="llm_size">LLM Model Size (Billions)</label>
+                    <input type="range" name="llm_size" min="1" max="70" value="7" class="form-range" id="llm_size" oninput="llm_val.value = this.value">
+                    <output id="llm_val" class="slider-value">7</output>
+                    <br><small><b>Why:</b> Model size influences memory and TFLOPS needs.<br>
+                    <b>How it affects sizing:</b> Larger models need more VRAM and GPU resources.</small>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header fw-bold">Performance Requirements</div>
+                <div class="card-body row">
+                    <div class="col">
+                        <label>Concurrency (Users)</label>
+                        <input type="range" name="concurrency" min="1" max="100" value="1" class="form-range" id="concurrency" oninput="con_val.value = this.value">
+                        <output id="con_val" class="slider-value">1</output>
+                    </div>
+                    <div class="col">
+                        <label>Input Tokens/sec</label>
+                        <input type="range" name="tokens_per_user" min="1" max="500" value="1" class="form-range" id="tokens" oninput="tok_val.value = this.value">
+                        <output id="tok_val" class="slider-value">1</output>
+                    </div>
+                    <div class="col">
+                        <label>Query Rate/sec</label>
+                        <input type="range" name="query_rate" min="1" max="100" value="1" class="form-range" id="query" oninput="qry_val.value = this.value">
+                        <output id="qry_val" class="slider-value">1</output>
+                    </div>
+                    <div class="col">
+                        <label>Latency Profile</label>
+                        <select name="latency_profile" class="form-select">
+                            <option>Low</option>
+                            <option>Medium</option>
+                            <option>Highly Sensitive</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header fw-bold">Deployment Preferences</div>
+                <div class="card-body row">
+                    <div class="col">
+                        <label>Cost Optimization</label>
+                        <select name="cost_optimization" class="form-select">
+                            <option>Low</option>
+                            <option>Medium</option>
+                            <option>High</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label>Preferred Hardware</label>
+                        <select name="preferred_hardware" class="form-select">
+                            <option>Gaudi</option>
+                            <option>A100</option>
+                            <option>H100</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label>Prompt Length</label>
+                        <input type="number" name="prompt_length" value="512" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label>Frames/sec</label>
+                        <input type="number" name="frames_per_sec" value="5" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">🔍 Estimate Hardware</button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#addUseCaseModal">➕ Add Use Case</button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#addBlueprintModal">➕ Add Blueprint</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Use Case Modal -->
+    <div class="modal fade" id="addUseCaseModal" tabindex="-1">
+      <div class="modal-dialog">
+        <form method="POST" action="/add_usecase" class="modal-content">
+          <div class="modal-header"><h5 class="modal-title">Add Use Case</h5></div>
+          <div class="modal-body">
+            <input type="text" name="usecase_name" class="form-control mb-2" placeholder="New Use Case Name" required>
+            <label>Select Blueprints:</label>
+            {% for bp in all_blueprints %}
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="blueprints" value="{{ bp }}">
+                <label class="form-check-label">{{ bp }}</label>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success" type="submit">Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Blueprint Modal -->
+    <div class="modal fade" id="addBlueprintModal" tabindex="-1">
+      <div class="modal-dialog">
+        <form method="POST" action="/add_blueprint" class="modal-content">
+          <div class="modal-header"><h5 class="modal-title">Add Blueprint</h5></div>
+          <div class="modal-body">
+            <input type="text" name="blueprint_name" class="form-control mb-2" placeholder="New Blueprint Name" required>
+            <label>Select Components:</label>
+            {% for cp in all_components %}
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="components" value="{{ cp }}">
+                <label class="form-check-label">{{ cp }}</label>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success" type="submit">Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
