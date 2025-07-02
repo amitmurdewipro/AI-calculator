@@ -228,4 +228,5 @@ def result():
                            h100_units=gpu_units["H100"])
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=8080)
+)
